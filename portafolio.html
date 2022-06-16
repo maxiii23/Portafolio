@@ -69,18 +69,28 @@
             </p>
         </h3>
         <h3><font face="Comic Sans MS,arial,verdana">Contact Me</font></h3>
-       <p>
-        <label> <font face="Comic Sans MS,arial,verdana">Name: </font></h3> </label>
-        <input type="text" name="name" 
-        placeholder="" >
-        <label> <font face="Comic Sans MS,arial,verdana">Email</font></h3></label>
-        <input type="text" name="name" 
-        placeholder="" >
+        <form action="/process" method="post">
+
         <div>
-            <h3><font face="Comic Sans MS,arial,verdana">Message</font></h3></h3>
-            <textarea name="Message" cols="40" rows="4"></textarea>
+            <label><font face="Comic Sans MS,arial,verdana">Name:</font></label>
+            <input type="text" name="first_name" placeholder="Tu Nombre...">
+            <label><font face="Comic Sans MS,arial,verdana">Gmail:</font></label>
+            <input type="email" name="email" placeholder="Tu gmail...">
         </div>
-       </p>
+        <div>
+            <label><font face="Comic Sans MS,arial,verdana">Mensaje:</font></label>
+            <textarea name="comment" cols="20" rows="3"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send Message">
+        </div>
+
+            </div>
+
+       </form>
+
+
+       
     </div>
 
 </body>
